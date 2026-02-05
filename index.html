@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Energia Vital | Karatê</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }body { background-color: #f5f5f5; color: #333; }
+
+header {
+  background: #1f3d44;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 { font-size: 24px; }
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  height: 400px;
+  background: #2f5c66; /* fundo no lugar da imagem */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h2 { font-size: 48px; margin-bottom: 10px; }
+
+.hero p { font-size: 18px; margin-bottom: 20px; }
+
+.hero button {
+  padding: 12px 30px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 60px 40px;
+  background: #fff;
+}
+
+.feature-box {
+  border: 1px solid #ddd;
+  padding: 30px;
+  text-align: center;
+}
+
+.feature-box h3 { margin-bottom: 10px; }
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 60px 40px;
+  align-items: center;
+}
+
+.about .image-placeholder {
+  background: #ccc;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-size: 18px;
+}
+
+.about h2 { margin-bottom: 15px; }
+
+.about p { line-height: 1.6; }
+
+.register {
+  background: #fff;
+  padding: 60px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.register .image-placeholder {
+  background: #ccc;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 12px;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+footer {
+  background: #1f3d44;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .about, .register { grid-template-columns: 1fr; }
+  .hero h2 { font-size: 36px; }
+}
+
+  </style>
+</head>
+<body>  <header>
+    <h1>Energia Vital</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Cursos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>KARATÊ</h2>
+    <p>Energia, disciplina e equilíbrio</p>
+    <button>Começar Agora</button>
+  </section>  <section class="features">
+    <div class="feature-box">
+      <h3>Curso de Karatê</h3>
+      <p>Treinamentos para todas as idades.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Instrutores Qualificados</h3>
+      <p>Profissionais experientes e certificados.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Melhores Resultados</h3>
+      <p>Foco no desenvolvimento físico e mental.</p>
+    </div>
+    <div class="feature-box">
+      <h3>Suporte</h3>
+      <p>Acompanhamento contínuo dos alunos.</p>
+    </div>
+  </section>  <section class="about">
+    <div>
+      <h2>Bem-vindo ao Energia Vital</h2>
+      <p>
+        O Energia Vital é um espaço dedicado ao ensino do karatê, promovendo disciplina, respeito,
+        saúde e autoconfiança. Aqui você encontra um ambiente seguro e motivador para evoluir.
+      </p>
+    </div>
+    <div class="image-placeholder">Espaço para imagem</div>
+  </section>  <section class="register">
+    <div class="image-placeholder">Espaço para imagem</div>
+    <div>
+      <h2>Inscreva-se Agora</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" />
+        <input type="email" placeholder="Seu email" />
+        <input type="tel" placeholder="Telefone" />
+        <textarea rows="4" placeholder="Mensagem"></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>  <footer>
+    <p>© 2026 Energia Vital - Karatê. Todos os direitos reservados.</p>
+  </footer></body>
+</html>
